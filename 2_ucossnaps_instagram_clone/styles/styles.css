@@ -1,0 +1,92 @@
+/* General Body Styling */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Animated Gradient Background */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Input Fields */
+input {
+    font-size: 1.5em;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #fa7e1e;
+    box-shadow: 0 0 10px #fa7e1e;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 1em;
+}
+
+/* Table Row Styling */
+tr {
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons (Optional for Instagram Look) */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
